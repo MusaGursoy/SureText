@@ -1,0 +1,13 @@
+services:
+  suretext.apiservice:
+    image: ${DOCKER_REGISTRY-}suretextapiservice
+    build:
+      context: .
+      dockerfile: SureText.ApiService/Dockerfile
+
+  suretext.web:
+    image: ${DOCKER_REGISTRY-}suretextweb
+    build:
+      context: .
+      dockerfile: SureText.Web/Dockerfile
+
