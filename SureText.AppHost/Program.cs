@@ -2,7 +2,12 @@ var builder = DistributedApplication.CreateBuilder(args);
 
 var cache = builder.AddRedis("cache");
 
-var apiService = builder.AddProject<Projects.SureText_ApiService>("apiservice");
+// Add PostgreSQL container
+var postgres = builder.AddPostgres("postgres")
+    .AddDatabase("suretext-postgresdb");
+
+var apiService = builder.AddProject<Projects.SureText_ApiService>("apiservice")
+    .WithReference(postgres); // Connect the API service to PostgreSQL
 
 builder.AddProject<Projects.SureText_Web>("webfrontend")
     .WithExternalHttpEndpoints()
