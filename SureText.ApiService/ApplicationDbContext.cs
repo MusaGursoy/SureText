@@ -1,13 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace SureText.ApiService.Data;
+namespace SureText.ApiService;
 
-public class ApplicationDbContext : DbContext
+public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : DbContext(options)
 {
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-        : base(options)
-    {
-    }
 
     // Define your DbSets here
     // public DbSet<YourEntity> YourEntities { get; set; } = default!;

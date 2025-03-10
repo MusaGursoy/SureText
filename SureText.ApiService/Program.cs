@@ -1,6 +1,8 @@
-using SureText.ApiService.Data;
 using Microsoft.EntityFrameworkCore;
-using Npgsql.EntityFrameworkCore.PostgreSQL; // Add this using directive
+
+using Npgsql.EntityFrameworkCore.PostgreSQL;
+
+using SureText.ApiService; // Add this using directive
 
 var builder = WebApplication.CreateBuilder(args);
 
