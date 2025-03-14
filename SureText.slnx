@@ -1,0 +1,10 @@
+<Solution>
+  <Project Path="docker-compose.dcproj">
+    <Build />
+  </Project>
+  <Project Path="SureText.ApiService/SureText.ApiService.csproj" />
+  <Project Path="SureText.AppHost/SureText.AppHost.csproj" />
+  <Project Path="SureText.ServiceDefaults/SureText.ServiceDefaults.csproj" />
+  <Project Path="SureText.Tests/SureText.Tests.csproj" />
+  <Project Path="SureText.Web/SureText.Web.csproj" />
+</Solution>

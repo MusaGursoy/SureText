@@ -23,6 +23,7 @@
     <PackageReference Include="Aspire.Hosting.MongoDB" Version="9.1.0" />
     <PackageReference Include="Aspire.Hosting.PostgreSQL" Version="9.1.0" />
     <PackageReference Include="Aspire.Hosting.Redis" Version="9.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Hybrid" Version="9.3.0" />
   </ItemGroup>
 
 </Project>
